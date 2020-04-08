@@ -15,22 +15,11 @@ public class PonasanjeNeprijatelja : MonoBehaviour
     {
         prikazRezultata = GameObject.Find("Rezultat").GetComponent<PrikazRezultata>();
     }
-    // Use this for initialization
-    void Update()
-    {
-        float vjerojatnost = PucanjuSekundi * Time.deltaTime;
-        if(Random.value < vjerojatnost)
-        {
-            Fire();
-        }
-    }
 
-    void Fire()
+    void Die()
     {
-        Vector3 offset = new Vector3(0, -1.0f, 0);
-        Vector3 polozajPucnja = transform.position + offset;
-        GameObject missile = Instantiate(projektil, polozajPucnja, Quaternion.identity) as GameObject;
-        missile.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -brzinaProjektila);
+        prikazRezultata.Rezultat(rezultatValue);
+        Destroy(gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -46,9 +35,23 @@ public class PonasanjeNeprijatelja : MonoBehaviour
             }
         }
     }
-    void Die()
+    
+    // Use this for initialization
+    void Update()
     {
-        prikazRezultata.Rezultat(rezultatValue);
-        Destroy(gameObject);
+        float vjerojatnost = PucanjuSekundi * Time.deltaTime;
+        if (Random.value < vjerojatnost)
+        {
+            Fire();
+        }
     }
+
+    void Fire()
+    {
+        Vector3 offset = new Vector3(0, -1.0f, 0);
+        Vector3 polozajPucnja = transform.position + offset;
+        GameObject missile = Instantiate(projektil, polozajPucnja, Quaternion.identity) as GameObject;
+        missile.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -brzinaProjektila);
+    }
+
 }

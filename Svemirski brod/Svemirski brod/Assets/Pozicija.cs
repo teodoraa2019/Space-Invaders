@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pozicija : MonoBehaviour {
+public class Pozicija : MonoBehaviour
+{
 
-	// Use this for initialization
-	void OnDrawGizmos () {
+    // Use this for initialization
+    void OnDrawGizmos()
+    {
         Gizmos.DrawWireSphere(transform.position, 1);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
+

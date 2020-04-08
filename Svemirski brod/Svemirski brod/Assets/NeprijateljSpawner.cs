@@ -20,14 +20,6 @@ public class NeprijateljSpawner : MonoBehaviour {
         xmax = desnaGranica.x;
         xmin = lijevaGranica.x;
 	}
-    void OzivljavanjeNeprijatelja()
-    {
-        foreach (Transform child in transform)
-        {
-            GameObject neprijatelj = Instantiate(neprijateljPrefab, child.transform.position, Quaternion.identity) as GameObject;
-            neprijatelj.transform.parent = child;
-        }
-    }
     public void OnDrawGizmos () {
         Gizmos.DrawWireCube(transform.position, new Vector3(sirina, visina));
     }
@@ -69,5 +61,13 @@ public class NeprijateljSpawner : MonoBehaviour {
             }
         }
         return true;
+    }
+    void OzivljavanjeNeprijatelja()
+    {
+        foreach (Transform child in transform)
+        {
+            GameObject neprijatelj = Instantiate(neprijateljPrefab, child.transform.position, Quaternion.identity) as GameObject;
+            neprijatelj.transform.parent = child;
+        }
     }
 }
