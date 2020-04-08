@@ -67,7 +67,27 @@ public class NeprijateljSpawner : MonoBehaviour {
         foreach (Transform child in transform)
         {
             GameObject neprijatelj = Instantiate(neprijateljPrefab, child.transform.position, Quaternion.identity) as GameObject;
-            neprijatelj.transform.parent = child;
+            neprijatelj.transform.parent = prazna;
         }
+    }
+    void DodavanjeNeprijatelja()
+    {
+        Transform praznaPozicija = PrvaPraznaPozicija();
+        if (praznaPozicija)
+        {
+            GameObject neprijatelj = Instantiate(neprijateljPrefab, praznaPozicija.transform.position, Quaternion.identity) as GameObject;
+            neprijatelj.transform.parent 
+        }
+    }
+    Transform PrvaPraznaPozicija()
+    {
+        foreach (Transform childPositionGameObject in transform)
+        {
+            if (childPositionGameObject.childCount == 0)
+            {
+                return childPositionGameObject;
+            }
+        }
+        return null;
     }
 }
