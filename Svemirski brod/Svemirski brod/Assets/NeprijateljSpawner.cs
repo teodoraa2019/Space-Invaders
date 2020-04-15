@@ -11,15 +11,38 @@ public class NeprijateljSpawner : MonoBehaviour {
     public float brzina = 5f;
     private float xmax;
     private float xmin;
+    public float odgodaNastanka = 1f;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         float distanceToCamera = transform.position.z - Camera.main.transform.position.z;
         Vector3 lijevaGranica = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distanceToCamera));
         Vector3 desnaGranica = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distanceToCamera));
         xmax = desnaGranica.x;
         xmin = lijevaGranica.x;
+        DodavanjeNeprijatelja();
 	}
+    void OzivljavanjeNeprijatelja()
+    {
+        foreach (Transform child in transform)
+        {
+            GameObject neprijatelj = Instantiate(neprijateljPrefab, child.transform.position, Quaternion.identity) as GameObject;
+            neprijatelj.transform.parent = child;
+        }
+    }
+    void DodavanjeNeprijatelja()
+    {
+        Transform praznaPozicija = PrvaPraznaPozicija();
+        if (praznaPozicija)
+        {
+            GameObject neprijatelj = Instantiate(neprijateljPrefab, praznaPozicija.transform.position, Quaternion.identity) as GameObject;
+            neprijatelj.transform.parent = praznaPozicija;
+        }
+        if (PrvaPraznaPozicija())
+        {
+            Invoke("DodavanjeNeprijatelja", odgodaNastanka);
+        }
+    }
     public void OnDrawGizmos () {
         Gizmos.DrawWireCube(transform.position, new Vector3(sirina, visina));
     }
@@ -48,7 +71,7 @@ public class NeprijateljSpawner : MonoBehaviour {
         if(AllMembersDead())
         {
             Debug.Log("praznaformacija");
-            OzivljavanjeNeprijatelja();
+            DodavanjeNeprijatelja();
         }
     }
     bool AllMembersDead()
@@ -61,23 +84,6 @@ public class NeprijateljSpawner : MonoBehaviour {
             }
         }
         return true;
-    }
-    void OzivljavanjeNeprijatelja()
-    {
-        foreach (Transform child in transform)
-        {
-            GameObject neprijatelj = Instantiate(neprijateljPrefab, child.transform.position, Quaternion.identity) as GameObject;
-            neprijatelj.transform.parent = prazna;
-        }
-    }
-    void DodavanjeNeprijatelja()
-    {
-        Transform praznaPozicija = PrvaPraznaPozicija();
-        if (praznaPozicija)
-        {
-            GameObject neprijatelj = Instantiate(neprijateljPrefab, praznaPozicija.transform.position, Quaternion.identity) as GameObject;
-            neprijatelj.transform.parent 
-        }
     }
     Transform PrvaPraznaPozicija()
     {
