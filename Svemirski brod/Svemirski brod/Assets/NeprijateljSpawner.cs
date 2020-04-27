@@ -20,7 +20,7 @@ public class NeprijateljSpawner : MonoBehaviour {
         Vector3 desnaGranica = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distanceToCamera));
         xmax = desnaGranica.x;
         xmin = lijevaGranica.x;
-        DodavanjeNeprijatelja();
+        OzivljavanjeNeprijatelja();
 	}
     void OzivljavanjeNeprijatelja()
     {
@@ -71,7 +71,7 @@ public class NeprijateljSpawner : MonoBehaviour {
         if(AllMembersDead())
         {
             Debug.Log("praznaformacija");
-            DodavanjeNeprijatelja();
+            OzivljavanjeNeprijatelja();
         }
     }
     bool AllMembersDead()

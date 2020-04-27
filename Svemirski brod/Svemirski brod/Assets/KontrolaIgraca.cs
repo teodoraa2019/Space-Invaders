@@ -7,7 +7,7 @@ public class KontrolaIgraca : MonoBehaviour {
     public GameObject projektil;
     public float brzinaProjektila;
     public float brzina = 15.0f;
-    public float snaga = 250;
+    public float snaga = 250f;
     float xmin;
     float xmax;
 

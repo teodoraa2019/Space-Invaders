@@ -17,7 +17,7 @@ Platform assembly: C:\Users\teodo\Desktop\git - projekti\Space-Invaders\Svemirsk
 Loading C:\Users\teodo\Desktop\git - projekti\Space-Invaders\Svemirski brod\Svemirski brod\Svemirski_brod_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\teodo\Desktop\git - projekti\Space-Invaders\Svemirski brod\Svemirski brod\Svemirski_brod_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\teodo\Desktop\git - projekti\Space-Invaders\Svemirski brod\Svemirski brod\Svemirski_brod_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.050 seconds
+- Completed reload, in  0.104 seconds
 Platform assembly: C:\Users\teodo\Desktop\git - projekti\Space-Invaders\Svemirski brod\Svemirski brod\Svemirski_brod_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\teodo\Desktop\git - projekti\Space-Invaders\Svemirski brod\Svemirski brod\Svemirski_brod_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
@@ -25,143 +25,46 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.431812 ms
+UnloadTime: 4.464089 ms
 Učitavanje razine:Game
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 11.328187 ms
+UnloadTime: 11.751101 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 330.
-Total: 0.604444 ms (FindLiveObjects: 0.064561 ms CreateObjectMapping: 0.028070 ms MarkObjects: 0.495906 ms  DeleteObjects: 0.014035 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 327.
+Total: 0.588537 ms (FindLiveObjects: 0.078596 ms CreateObjectMapping: 0.053333 ms MarkObjects: 0.444444 ms  DeleteObjects: 0.010292 ms)
 
-praznaformacija
+NullReferenceException: Object reference not set to an instance of an object
+  at PonasanjeNeprijatelja.Die () [0x00000] in <filename unknown>:0 
+  at PonasanjeNeprijatelja.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PonasanjeNeprijatelja.Die () [0x00000] in <filename unknown>:0 
+  at PonasanjeNeprijatelja.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Učitavanje razine:Win
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Rezultat
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.925379 ms
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 263.
+Total: 0.501519 ms (FindLiveObjects: 0.060818 ms CreateObjectMapping: 0.027134 ms MarkObjects: 0.346198 ms  DeleteObjects: 0.065497 ms)
+
+Učitavanje razine:Start
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Rezultat
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.448419 ms
 
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 268.
+Total: 0.606315 ms (FindLiveObjects: 0.058011 ms CreateObjectMapping: 0.056140 ms MarkObjects: 0.450993 ms  DeleteObjects: 0.037426 ms)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at KontrolaIgraca.Die () [0x00000] in <filename unknown>:0 
-  at KontrolaIgraca.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1734 -> priority: 1 
-  Thread -> id: 7c8 -> priority: 1 
