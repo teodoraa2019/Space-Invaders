@@ -47,7 +47,7 @@ public class KontrolaIgraca : MonoBehaviour {
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.position += Vector3.left * brzina * Time.deltaTime;
+            transform.position += Vector3.right * brzina * Time.deltaTime;
         }
         //Ogranicava kretanje svemirskog broda izvan scene
         float newX = Mathf.Clamp(transform.position.x, xmin, xmax);
